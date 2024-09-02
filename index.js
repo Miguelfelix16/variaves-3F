@@ -9,4 +9,4 @@ anoAtual = anoAtual + 1;
 console.log(anoAtual);
 
 idade = idade + 1;
-console.log(idade)
+console.log(idade);
