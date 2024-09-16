@@ -1,9 +1,12 @@
+const prompt = require('prompt-sync');
+const entrada = prompt();
+
 let idade = 17;
 const anoNascimento = 2007;
 let anoAtual = 2024;
 const nomeCompleto = "Miguel Placido Felix"
 
-console.log("Meu nome é " + nomeCompleto + " nascido no ano de " + anoNascimento + " e no ano atual " + anoAtual + " completo " + idade + " anos")
+console.log("Meu nome é " + nomeCompleto + " Nascido No Ano De " + anoNascimento + " E No Ano Atual " + anoAtual + " Completo " + idade + " Anos")
 
 anoAtual = anoAtual + 1;
 
@@ -14,18 +17,22 @@ console.log(idade);
 
 const listaDeDestinos = new Array(
   "Buenos Aires",
-  "bangkok",
+  "Bangkok",
   "Londres",
   "Paris",
   "Nova York",
 )
 
-const idadeComprador = 18;
+var nomeComprador = entrada("Digite Seu Nome:")
+var idadeComprador = entrada("Qual A Sua Idade?")
+
 
 if(idadeComprador >= 18) {
-  console.log("Comprador maior de idade");
-  console.log("destinos disponíveis: " + listaDeDestinos);
+  console.log("Olá senhor(a) " + nomeComprador);
+  console.log("Comprador Maior De Idade");
+  console.log("Destinos Disponíveis: " + listaDeDestinos);
 } else {
+  
   console.log("Produto Indisponível Para Menores De Idade");
-   console.log("Voce é de moner")
+   console.log("Você É De Menor")
 } 
