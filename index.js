@@ -25,7 +25,11 @@ idade = idade + 1;
 console.log(idade);
 
 //Agência de viagens Atenas, Oslo, Paris, Nova York, Cancun
-
+console.log("  ")
+console.log(--------------------------------)
+console.log(-------âgencia de viagens-------)
+console.log(--------------------------------)
+console.log("  ")
 const listaDeDestinos = new Array(
   "Atenas",
   " Oslo",
@@ -50,7 +54,9 @@ var login = entrada("Qual é o seu login? ");
 var senha = entrada("Digite sua senha: ");
 
 while(login != loginCerto || senha != senhaCerta){
-  console.log ("Login ou senha incorretos");
+  console.log("Login ou senha incorretos");
+  login = entrada( "Digite seu login:");
+  senha = entrada ("Digite sua senha:");
 }
 
 var nomeComprador = entrada("Digite seu nome: ");
